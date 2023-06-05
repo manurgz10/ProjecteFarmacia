@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/cssalta.css">
+    <title>Alta</title>
+</head>
+<body onload="getPaciente();getMedicina()">
+    <div>
+    <h1>Alta</h1>
+
+        <label for="xipId">ID Físic del Xip:</label>
+        <input type="text" id="xipId" name="xipId"><br><br>
+
+        <label for="patientList">Pacients:</label>
+        <select id="patientList" name="patientList">
+        </select><br><br>
+
+        <label for="medicineList">Medicaments:</label>
+        <select id="medicineList" name="medicineList">
+        </select><br><br>
+
+        <label for="endDate">Data límit:</label>
+        <input type="date" id="endDate" name="endDate"><br><br>
+
+        <button onclick="enviar1()" type="submit" value="Enviar">Enviar</button>
+        <a href="gestio.html">Tornar a Gestió</a>
+
+    </div>
+    <br>
+
+</body>
+</html>

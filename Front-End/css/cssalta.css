@@ -1,0 +1,44 @@
+body {
+    background-color: #27282c;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+select,
+input[type="date"],
+button[type="submit"] {
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

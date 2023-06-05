@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<script src="script.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://kit.fontawesome.com/1982169380.js" crossorigin="anonymous"></script>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-house-medical"></i> Farmafull
+        </a>
+        <nav class="nav">
+            <a href="#">Inicio</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>    
+    <section class="home">
+        <div class="content">
+            <h2> Farmafull, calidad y excelencia en cada medicamento </h2>
+            <p>Farmafull es una compañía farmacéutica comprometida con la salud y el bienestar de sus clientes. Ofrecemos productos de alta calidad y servicio personalizado para mejorar la calidad de vida de nuestros clientes.</p>
+        </div>
+        <div class="login-container">
+            <div class="wrapper-login">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="mail" id="mail" required>
+                    <label> Email </label>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" id="password" required>
+                    <label> Contraseña </label>
+                </div>
+                <button onclick="enviar()" type="submit" class="btn">Login</button>
+                </div>
+            </div>
+            <div class="homemedico">
+                <img src="data:image/png;base64,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">
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
